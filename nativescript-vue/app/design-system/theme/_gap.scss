@@ -1,0 +1,40 @@
+$very-large-gap: 40;
+$large-gap: 20;
+
+// Very Large
+.gap-a-very-large {
+  margin: $very-large-gap;
+}
+
+.gap-b-very-large {
+  margin-bottom: $very-large-gap;
+}
+
+.gap-b-none {
+  margin-bottom: 0;
+}
+
+.gap-t-very-large {
+  margin-top: $very-large-gap;
+}
+
+// Large
+.gap-a-large {
+  margin: $large-gap;
+}
+
+.gap-b-large {
+  margin-bottom: $large-gap;
+}
+
+.gap-l-large {
+  margin-left: $large-gap;
+}
+
+.gap-b-none {
+  margin-bottom: 0;
+}
+
+.gap-t-large {
+  margin-top: $large-gap;
+}

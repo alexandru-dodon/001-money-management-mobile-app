@@ -1,0 +1,24 @@
+$tiny-rounding: 2;
+$small-rounding: 5;
+$medium-rounding: 10;
+$large-rounding: 20;
+
+.circle {
+  border-radius: 50%;
+}
+
+.rounding-a-tiny {
+  border-radius: $tiny-rounding;
+}
+
+.rounding-a-small {
+  border-radius: $small-rounding;
+}
+
+.rounding-a-medium {
+  border-radius: $medium-rounding;
+}
+
+.rounding-a-large {
+  border-radius: $large-rounding;
+}

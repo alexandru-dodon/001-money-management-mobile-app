@@ -1,20 +1,22 @@
 import Vue from 'nativescript-vue'
-import VueDevtools from 'nativescript-vue-devtools'
 
 import App from './App.vue'
+import { Config } from './boot/Config';
+import { attachPlugins } from './boot/attachPlugins';
 
-if (TNS_ENV === "development") {
-  Vue.use(VueDevtools);
+async function main(config: Config) {
+  await attachPlugins(Vue, config);
+  
+  new Vue({
+    render: h => h("frame", [h(App)])
+  }).$start();
 }
 
-// Prints Vue logs when --env.production is *NOT* set while building
-Vue.config.silent = (TNS_ENV === 'production');
-// @ts-ignore
-Vue.config.suppressRenderLogs = true;
-// Set the following to `false` to not colorize the logs created by nativescript-vue
-// disabled in template due to typing issue for Typescript projects....NEEDS TO BE FIXED
-// Vue.config.debug = true;
-
-new Vue({
-  render: h => h("frame", [h(App)])
-}).$start();
+main({
+  environment: TNS_ENV || "development",
+  plugins: [
+    "vue-devtools",
+    "suppress-noise",
+    "design-system"
+  ]
+});

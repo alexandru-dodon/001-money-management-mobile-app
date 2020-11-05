@@ -1,0 +1,15 @@
+$stroke-width: 2;
+
+.stroke-a-solid {
+  border-width: $stroke-width;
+  border-style: solid;
+}
+
+.stroke-b-solid {
+  border-bottom-width: $stroke-width;
+  border-bottom-style: solid;
+}
+
+.stroke-gray {
+  border-color: $light-gray-color;
+}

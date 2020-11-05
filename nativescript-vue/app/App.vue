@@ -1,10 +1,16 @@
 <template>
-  <Page class="app"></Page>
+  <DashboardController />
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 
-@Component
+import DashboardController from "@/gui/dashboard/DashboardController.vue";
+
+@Component({
+  components: {
+    DashboardController
+  }
+})
 export default class App extends Vue {}
 </script>

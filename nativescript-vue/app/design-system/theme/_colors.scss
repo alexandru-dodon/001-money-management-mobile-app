@@ -1,0 +1,69 @@
+$ultra-light-gray-color: #FAFEFB;
+$light-gray-color: #F1F5F8;
+
+$dark-color: #242B58;
+$gray-color: #727A88;
+$primary-color: #4A45FF;
+$aqua-color: #3099FF;
+$cyan-color: #3CCBFF;
+$orange-color: #FE735A;
+
+.bg-dark {
+  background-color: $dark-color;
+}
+
+.font-dark {
+  color: $dark-color;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.font-white {
+  color: white;
+}
+
+.bg-ultra-light-gray {
+  background-color: $ultra-light-gray-color;
+}
+
+.bg-light-gray {
+  background-color: $light-gray-color;
+}
+
+.font-gray {
+  color: $gray-color;
+}
+
+.bg-primary {
+  background-color: $primary-color;
+}
+
+.font-primary {
+  color: $primary-color;
+}
+
+.bg-aqua {
+  background-color: $aqua-color;
+}
+
+.bg-cyan {
+  background-color: $cyan-color;
+}
+
+.bg-faded-cyan {
+  background-color: rgba($cyan-color, .15);
+}
+
+.font-cyan {
+  color: $cyan-color;
+}
+
+.bg-orange {
+  background-color: $orange-color;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}

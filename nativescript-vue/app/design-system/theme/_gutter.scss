@@ -1,0 +1,50 @@
+$very-small-gutter: 5;
+$small-gutter: 10;
+$medium-gutter: 15;
+$large-gutter: 20;
+$very-large-gutter: 25;
+
+.gutter-a-large {
+  padding: $large-gutter;
+}
+
+.gutter-a-very-large {
+  padding: $very-large-gutter;
+}
+
+.gutter-x-very-small {
+  padding-left: $very-small-gutter;
+  padding-right: $very-small-gutter;
+}
+
+.gutter-x-small {
+  padding-left: $small-gutter;
+  padding-right: $small-gutter;
+}
+
+.gutter-x-medium {
+  padding-left: $medium-gutter;
+  padding-right: $medium-gutter;
+}
+
+.gutter-x-large {
+  padding-left: $large-gutter;
+  padding-right: $large-gutter;
+}
+
+.gutter-x-very-large {
+  padding-left: $very-large-gutter;
+  padding-right: $very-large-gutter;
+}
+
+.gutter-b-large {
+  padding-bottom: $large-gutter;
+}
+
+.gutter-b-none {
+  padding-bottom: 0;
+}
+
+.gutter-t-large {
+  padding-top: $large-gutter;
+}
